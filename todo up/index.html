@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en" style="height: 100%;">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cherry+Bomb+One&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=ADLaM+Display&family=Cherry+Bomb+One&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        /* Стили для поля ввода */
+        input {
+            -webkit-appearance: none; /* Убирает стили Safari */
+            -moz-appearance: none; /* Убирает стили Firefox */
+            appearance: none; /* Убирает стили для остальных браузеров */
+            border: none; /* Убирает рамку */
+            background-color: transparent; /* Убирает фон */
+            box-shadow: none; /* Убирает тень */
+            height: 40px; /* Высота поля ввода */
+            width: calc(100% - 40px); /* Ширина поля ввода */
+            outline: none; /* Убирает контур */
+            color: #000; /* Цвет текста */
+            font-family: Arial, sans-serif; /* Шрифт текста */
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+        }
+    </style>
+    <title>todo</title>
+</head>
+<body style="background-color:#E5A8D7; height: 80%;" >
+    <h1 class="grid justify-center text-5xl mt-10 mb-5 text-fuchsia-950" style="font-family: 'Cherry Bomb One'; font-weight: 900;"> TODO APP</h1>
+    <card class="block m-5 bg-white p-5 rounded-lg shadow-2xl h-full gap-4">
+        <div style="position: relative; box-shadow: inset 4px 4px 13px #C5CAE9; font-family: 'ADLaM Display'; font-weight: 900; padding-right: 40px; border: 1px solid #C5CAE9; border-radius: 8px; height: 40px;"> 
+            <input class="input - task" placeholder="ADD TASK..." type="text" name="" onkeyup="test()" id="" style="padding-right: 40px; border: none; background: transparent; height: 100%; width: calc(100% - 40px); outline: none; padding-left: 20px;"> 
+            <img class="cursor-pointer duration-300 hover:scale-110" src="./images/Done.svg" alt="" srcset="" style="position: absolute; right: 15px; top: 13px; transform: translateY(-30%);" > 
+        </div>
+        <div class="mt-5 flex justify-center gap-4 flex">
+            <button style="background-color:#59C8A8; font-family: 'ADLaM Display'; font-weight: 900;" class=" px-5 py-3 w-full text-white rounded-lg  duration-300 hover:scale-90">TODO APP </button>
+            <button style="background-color:#4E1D57; font-family: 'ADLaM Display'; font-weight: 900;" class=" px-5 py-3 w-full text-white rounded-lg duration-300 hover:scale-90">COMPLETE</button>
+        </div>
+        <div class="mt-2">
+            <ul>
+                <li class="flex justify-between items-center my-5 px-5 py-3 w-full text-fuchsia-950 rounded-lg" style="box-shadow: inset 4px 4px 13px #C5CAE9; font-family: 'ADLaM Display'; font-weight: 900;">
+                    <span>TASK NAME</span>
+                    <div class="flex gap-3">
+                        <img class="cursor-pointer duration-300 hover:scale-110" src="./images/Done.svg" alt="" srcset=""> 
+                        <img class="cursor-pointer duration-300 hover:scale-110" src="./images/Edit.svg" alt="" srcset="">
+                        <img class="cursor-pointer duration-300 hover:scale-110" src="./images/Trash.svg" alt="" srcset="">
+                    </div>
+                </li>
+                <li class="flex justify-between items-center my-5 px-5 py-3 w-full text-fuchsia-950 rounded-lg" style="box-shadow: inset 4px 4px 13px #C5CAE9; font-family: 'ADLaM Display'; font-weight: 900;">
+                    <span>TASK 1</span>
+                    <div class="flex gap-3">
+                        <img class="cursor-pointer duration-300 hover:scale-110" src="./images/Done.svg" alt="" srcset=""> 
+                        <img class="cursor-pointer duration-300 hover:scale-110" src="./images/Edit.svg" alt="" srcset="">
+                        <img class="cursor-pointer duration-300 hover:scale-110" src="./images/Trash.svg" alt="" srcset="">
+                    </div>
+                </li>
+                <li class="flex justify-between items-center my-5 px-5 py-3 w-full text-fuchsia-950 rounded-lg" style="box-shadow: inset 4px 4px 13px #C5CAE9; font-family: 'ADLaM Display'; font-weight: 900;">
+                    <span>TASK 2</span>
+                    <div class="flex gap-3">
+                        <img class="cursor-pointer duration-300 hover:scale-110" src="./images/Done.svg" alt="" srcset=""> 
+                        <img class="cursor-pointer duration-300 hover:scale-110" src="./images/Edit.svg" alt="" srcset="">
+                        <img class="cursor-pointer duration-300 hover:scale-110" src="./images/Trash.svg" alt="" srcset="">
+                    </div>
+                </li>
+                <li class="flex justify-between items-center my-5 px-5 py-3 w-full text-fuchsia-950 rounded-lg" style="box-shadow: inset 4px 4px 13px #C5CAE9; font-family: 'ADLaM Display'; font-weight: 900;">
+                    <span>TASK 3</span>
+                    <div class="flex gap-3">
+                        <img class="cursor-pointer duration-300 hover:scale-110" src="./images/Done.svg" alt="" srcset=""> 
+                        <img class="cursor-pointer duration-300 hover:scale-110" src="./images/Edit.svg" alt="" srcset="">
+                        <img class="cursor-pointer duration-300 hover:scale-110" src="./images/Trash.svg" alt="" srcset="">
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </card>
+    <h2 class="footer bg-white rounded-lg shadow-lg m-5 p-3 w-1/2 ml-auto text-fuchsia-950" style="box-shadow: inset 4px 4px 13px #C5CAE9; font-family: 'ADLaM Display'; font-weight: 900;">
+       <span> 
+         delevoped by <a href="https://github.com/KP11Space" class="duration-300 mx-1 hover:text blue-600"> @KP11Space </a> in 2025
+        </span>
+    </h2>
+</body>
+</html>
