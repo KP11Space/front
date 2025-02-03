@@ -1,4 +1,4 @@
-document.addEventlistener('DOMContentLoaded', function(){         
+document.addEventListener('DOMContentLoaded', function(){         
      const imgTaskAdd = document.getElementById("img-post-task")
      imgTaskAdd.addEventlistener('click', function(){
         createTask
