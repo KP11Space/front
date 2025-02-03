@@ -13,7 +13,7 @@ const mockapiURL = "https://678d26c2f067bf9e24e97242.mockapi.io/task"
 function getTasks(){
     fetch(mockapiURL, {
         method: 'GET',
-        headers: {'content - type':'application/json'},
+        headers: {'content-type':'application/json'},
     }).then(res => {
         if (res.ok) {
             return res.json();
