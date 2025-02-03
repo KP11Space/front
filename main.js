@@ -3,8 +3,8 @@ document.addEventListener('DOMContentLoaded', function(){
      imgTaskAdd.addEventListener('click', function(){
         createTask()
      })
-     getTasks()
-     getTasks()
+     getTasks();
+     getTasks();
      //getTasks()
      //createtask("test", date.toISOString())
 }, false)
