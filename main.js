@@ -23,7 +23,7 @@ function getTasks(){
         tasks.forEach(task => {
           const taskName = task["name"]
           const li = document.createElement("li")
-           li.classList.add += "task-item"
+           li.classList.add("task-item")
           li.innerHTML =`<li class="flex justify-between items-center my-5 px-5 py-3 w-full text-fuchsia-950 rounded-lg" style="box-shadow: inset 4px 4px 13px #C5CAE9; font-family: 'ADLaM Display'; font-weight: 900;">
           <span> ${taskName}</span>
                     <div class="flex gap-3">
