@@ -44,7 +44,7 @@ function createTask(){
     var date = new Date();
     const newTask = {
         name: inputTask.value,
-        is_complated: false,
+        is_complеted: false,
         created: date.toISOString()
       };
       
@@ -58,7 +58,7 @@ function createTask(){
         }
       }).then(task => {
         inputTask.value =  ""
-        createElementAndApppendChild(task["name"]) 
+        createElementAndAppendChild(task["name"]) 
       }).catch(error => {
         
       })
