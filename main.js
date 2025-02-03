@@ -1,7 +1,7 @@
 document.addEventListener('DOMContentLoaded', function(){         
      const imgTaskAdd = document.getElementById("img-post-task")
      imgTaskAdd.addEventListener('click', function(){
-        createTask
+        createTask()
      })
      getTasks()
      getTasks()
@@ -19,7 +19,7 @@ function getTasks(){
             return res.json();
         }
     }).then(tasks => {
-        conatainer.innerHTML = ''
+        container.innerHTML = ''
         tasks.forEach(task => {
           const li = createElement(task["name"])
            container.appendChild(li)   
