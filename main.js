@@ -24,7 +24,8 @@ function getTasks(){
           const taskName = task["name"]
           const li = document.createElement("li")
            li.classList += "task-item"
-          li.innerHTML =`<span> ${taskName}</span>
+          li.innerHTML =`<li class="flex justify-between items-center my-5 px-5 py-3 w-full text-fuchsia-950 rounded-lg" style="box-shadow: inset 4px 4px 13px #C5CAE9; font-family: 'ADLaM Display'; font-weight: 900;">
+          <span> ${taskName}</span>
                     <div class="flex gap-3">
                         <img class="cursor-pointer duration-300 hover:scale-110" src="./Done.svg" alt="" srcset=""> 
                         <img class="cursor-pointer duration-300 hover:scale-110" src="./Edit.svg" alt="" srcset="">
