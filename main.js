@@ -54,19 +54,5 @@ function createTask(){
         
       })
 }
-function createElementAndApppendChild(taskName){
-  const conatainer = document.getElentyById("task-container")
-  const li = document.createElement("li")
-   li.classlist += "task-item"
-       li.innerHTML =  `<span>${taskName}</span>
-         <div class="flex gap-3">
-            <img class="cursor-pointer duration-300 hover:scale-110" src=".Done.svg" alt="" srcset=""> 
-              <img class="cursor-pointer duration-300 hover:scale-110" src=".Edit.svg" alt="" srcset="">
-               <img class="cursor-pointer duration-300 hover:scale-110" src=".Trash.svg" alt="" srcset="">
-          </div>`
-   container.appendChild(li)
-
-}
-
 
 
