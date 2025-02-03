@@ -22,7 +22,8 @@ function getTasks(){
     }).then(tasks => {
         conatainer.innerHTML = ''
         tasks.forEach(task => {
-           createElementAndApppendChild(task["name"])   
+          const li = createElement(task["name"])
+           container.appendChild(li)   
             
         });
         
