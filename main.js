@@ -11,6 +11,8 @@ document.addEventListener('DOMContentLoaded', function(){
 
 const mockapiURL = "https://678d26c2f067bf9e24e97242.mockapi.io/task"
 function getTasks(){
+     const container = document.getElementById("task-container")
+     
     fetch(mockapiURL, {
         method: 'GET',
         headers: {'content-type':'application/json'},
