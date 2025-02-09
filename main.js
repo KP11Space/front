@@ -50,9 +50,6 @@ const deleteIcons = document.querySelectorAll('.delete-task');
                 deleteTask(taskId);
             });
         });
-    }).catch(error => {
-       
-    })
 function createTask(){
     const inputTask = document.getElementById("input-post-task")
     var date = new Date();
