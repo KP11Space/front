@@ -24,18 +24,18 @@ function getTasks(){
         container.innerHTML = ''
         tasks.forEach(task => {
           const taskName = task["name"]
-          const li = document.createElement("li")
-           li.classList.add("task-item")
-          li.innerHTML = `<li class="flex justify-between items-center my-5 px-5 py-3 w-full text-fuchsia-950 rounded-lg" style="box-shadow: inset 4px 4px 13px #C5CAE9; font-family: 'ADLaM Display'; font-weight: 900;">
-                     <span> ${taskName}</span>
-                           <div class="flex gap-3">
-                             <img class="cursor-pointer duration-300 hover:scale-110" src="./Done.svg" alt="" srcset=""> 
-                             <img class="cursor-pointer duration-300 hover:scale-110" src="./Edit.svg" alt="" srcset="">
-                             <img class="cursor-pointer duration-300 hover:scale-110" src="./Trash.svg" alt="" srcset="">
-                          </div>
-                       </li>`
-          container.appendChild(li)
-        });
+         const li = document.createElement("li");
+li.classList.add("task-item", "flex", "justify-between", "items-center", "my-5", "px-5", "py-3", "w-full", "text-fuchsia-950", "rounded-lg");
+li.style.boxShadow = "inset 4px 4px 13px #C5CAE9";
+li.style.fontFamily = "'ADLaM Display'";
+li.style.fontWeight = "900";
+li.innerHTML = `
+    <span>${taskName}</span>
+    <div class="flex gap-3">
+        <img class="cursor-pointer duration-300 hover:scale-110" src="./Done.svg" alt=""> 
+        <img class="cursor-pointer duration-300 hover:scale-110" src="./Edit.svg" alt="">
+        <img class="cursor-pointer duration-300 hover:scale-110" src="./Trash.svg" alt="">
+    </div>`;
         
     }).catch(error => {
 
