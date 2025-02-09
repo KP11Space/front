@@ -35,7 +35,9 @@ li.innerHTML = `
         <img class="cursor-pointer duration-300 hover:scale-110" src="./Done.svg" alt=""> 
         <img class="cursor-pointer duration-300 hover:scale-110" src="./Edit.svg" alt="">
         <img class="cursor-pointer duration-300 hover:scale-110" src="./Trash.svg" alt="">
-    </div>`;
+    </div>`
+             container.appendChild(li)
+    });
         
     }).catch(error => {
 
