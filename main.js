@@ -52,7 +52,7 @@ const deleteIcons = document.querySelectorAll('.delete-task');
         });
     }).catch(error => {
         console.error('Ошибка при получении задач:', error);
-    });
+    })
 }
 function createTask(){
     const inputTask = document.getElementById("input-post-task")
