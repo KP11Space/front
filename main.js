@@ -81,4 +81,6 @@ function deleteTask(taskId) {
     }).then(res => {
         if (res.ok) {
             getTasks(); 
-
+        }
+    }}
+            
