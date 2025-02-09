@@ -43,6 +43,17 @@ li.innerHTML = `
 
     })
 }
+const deleteIcons = document.querySelectorAll('.delete-task');
+        deleteIcons.forEach(icon => {
+            icon.addEventListener('click', function() {
+                const taskId = this.getAttribute('data-id');
+                deleteTask(taskId);
+            });
+        });
+    }).catch(error => {
+        console.error('Ошибка при получении задач:', error);
+    });
+}
 function createTask(){
     const inputTask = document.getElementById("input-post-task")
     var date = new Date();
