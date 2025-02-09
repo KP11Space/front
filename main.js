@@ -78,5 +78,11 @@ function createTask(){
         
       })
 }
-
+function deleteTask(taskId) {
+    fetch(`${mockapiURL}/${taskId}`, {
+        method: 'DELETE',
+        headers: { 'content-type': 'application/json' },
+    }).then(res => {
+        if (res.ok) {
+            getTasks(); 
 
