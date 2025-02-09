@@ -48,10 +48,15 @@
     border-radius: 15px; /* Скругленные углы у контейнера */
     padding: 20px; /* Отступы внутри контейнера */
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Легкая тень для контейнера */
-                 h2 class{ footer bg-white rounded-lg shadow-lg m-5 p-3 w-1/2 ml-auto text-fuchsia-950" style="box-shadow: inset 4px 4px 13px #C5CAE9; font-family: 'ADLaM Display'; font-weight: 900;
-      
-         delevoped by <a href="https://github.com/KP11Space" class="duration-300 mx-1 hover:text blue-600"> @KP11Space </a> in 2025
-                         }
+               
+}
+            .footer {
+    position: fixed; /* Фиксируем футер */
+    bottom: 0; /* Располагаем футер внизу */
+    left: 50%; /* Центрируем по горизонтали */
+    transform: translateX(-50%); /* Корректируем центрирование */
+    width: 50%; /* Задаем ширину */
+    z-index: 10; /* Устанавливаем z-index, чтобы футер был поверх других элементов */
 }
         }
     </style>
