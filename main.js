@@ -43,13 +43,6 @@ li.innerHTML = `
 
     })
 }
-const deleteIcons = document.querySelectorAll('.delete-task');
-        deleteIcons.forEach(icon => {
-            icon.addEventListener('click', function() {
-                const taskId = this.getAttribute('data-id');
-                deleteTask(taskId);
-            });
-        });
 function createTask(){
     const inputTask = document.getElementById("input-post-task")
     var date = new Date();
@@ -74,13 +67,5 @@ function createTask(){
         
       })
 }
-function deleteTask(taskId) {
-    fetch(`${mockapiURL}/${taskId}`, {
-        method: 'DELETE',
-        headers: { 'content-type': 'application/json' },
-    }).then(res => {
-        if (res.ok) {
-            getTasks(); 
-        }
-    }}
+
             
