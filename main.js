@@ -34,7 +34,7 @@ li.innerHTML = `
     <div class="flex gap-3">
         <img class="cursor-pointer duration-300 hover:scale-110" src="./Done.svg" alt=""> 
         <img class="cursor-pointer duration-300 hover:scale-110" src="./Edit.svg" alt="">
-        <img class="cursor-pointer duration-300 hover:scale-110" src="./Trash.svg" alt="">
+        <img class="cursor-pointer duration-300 hover:scale-110" src="./Trash.svg" alt=""data-id="${task.id}">
     </div>`
              container.appendChild(li)
     });
@@ -67,5 +67,14 @@ function createTask(){
         
       })
 }
-
+async function deleteTask(taskId) {
+    try {
+        const res = await fetch(`${mockapiURL}/${taskId}`, {
+            method: 'DELETE',
+            headers: { 'content-type': 'application/json' },
+        });
+        
+        if (!res.ok) {
+            throw new Error('Failed to delete task');
+        }
             
