@@ -81,5 +81,5 @@ async function deleteTask(taskId) {
         
         }.catch(error => {
 
-    }
+       })
 }          
