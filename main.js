@@ -76,7 +76,8 @@ async function deleteTask(taskId) {
         
         if (!res.ok) {
             throw new Error('Failed to delete task');
-        }
-    }
-}
-            
+        }}
+        
+        }).catch(error => {
+
+    })            
