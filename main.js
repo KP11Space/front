@@ -34,7 +34,7 @@ li.innerHTML = `
     <div class="flex gap-3">
         <img class="cursor-pointer duration-300 hover:scale-110" src="./Done.svg" alt=""> 
         <img class="cursor-pointer duration-300 hover:scale-110" src="./Edit.svg" alt="">
-        <img class="cursor-pointer duration-300 hover:scale-110" src="./Trash.svg" alt=""data-id="${task.id}">
+        <img class="cursor-pointer duration-300 hover:scale-110" src="./Trash.svg" alt="" data-id="${task.id}">
     </div>`
              container.appendChild(li)
     });
