@@ -82,4 +82,15 @@ async function deleteTask(taskId) {
         } catch(error) { console.error(error);
 
        }
-}          
+}     const trashIcons = document.querySelectorAll('.trash-icon');
+        trashIcons.forEach(icon => {
+            icon.addEventListener('click', function() {
+                const taskId = this.getAttribute('data-id');
+                deleteTask(taskId);
+            });
+        });
+        
+    }).catch(error => {
+        console.error(error);
+    });
+}     
