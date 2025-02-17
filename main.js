@@ -91,7 +91,7 @@ const trashIcons = document.querySelectorAll('.trash-icon');
             });
         });
         
-    }).catch(error => {
+    } catch(error) {
         console.error(error);
-    });
+    }
 }     
