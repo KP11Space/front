@@ -79,7 +79,7 @@ async function deleteTask(taskId) {
         }
          getTask();
         
-        }).catch(error => {
+        } catch(error) { console.error(error);
 
-       })
+       }
 }          
