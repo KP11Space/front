@@ -82,7 +82,8 @@ async function deleteTask(taskId) {
         } catch(error) { console.error(error);
 
        }
-}     
+}  
+document.addEventListener('DOMContentLoaded', () => {
 const trashIcons = document.querySelectorAll('.trash-icon');
         trashIcons.forEach(icon => {
             icon.addEventListener('click', function() {
@@ -90,6 +91,7 @@ const trashIcons = document.querySelectorAll('.trash-icon');
                 deleteTask(taskId);
             });
         });
+     });
         
              
     
