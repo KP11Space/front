@@ -69,7 +69,7 @@ function createTask(){
 }
 async function deleteTask(taskId) {
     try {
-        const res = await fetch(`${mockapiURL}/${taskId}`, {
+        const res = await fetch(`https://678d26c2f067bf9e24e97242.mockapi.io/task${taskId}`, {
             method: 'DELETE',
             headers: { 'content-type': 'application/json' },
         });
